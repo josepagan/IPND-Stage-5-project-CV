@@ -1,3 +1,7 @@
+
+
+
+
 //This javascript file is the core of the project, it holds the content
 //access and formats the content and then attach it to the page with
 //jquery commands
@@ -246,3 +250,9 @@ function inName(string) {
 //attachement of the last two elements on the web, the internationalizeButton and the google map
 $("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
+
+
+//little js trick to scroll back when clicking on the sat nav so it does not occult the anchor
+var shiftWindow = function() { scrollBy(0, -50) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
