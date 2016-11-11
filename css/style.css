@@ -130,6 +130,8 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  padding-top: 75px
+
 }
 
 .flex-box {
@@ -219,3 +221,39 @@ span {
     display: block;
   }
 }
+
+
+
+/*navigation bar formatting*/
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li.navbar {
+    float: left;
+}
+
+li.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.navbar a:hover {
+    background-color: #f5ae23;
+}
+
+.active {
+    background-color: #f5ae23;
